@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fool Me Once - One Page Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+      padding: 15px 0;
+      margin-bottom: 30px;
+      text-align: center;
+      border-bottom: 2px solid #333;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #333;
+    }
+
+    .trailer-btn {
+      background-color: crimson;
+      color: white;
+      font-weight: bold;
+    }
+
+    .trailer-btn:hover {
+      background-color: darkred;
+    }
+
+    .information {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ffcc99;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #ffcc99;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+  </style><!--Using an external CSS file to style elements creatively.-->
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#Overview">Overview</a></li></li><!--Link to overview section in navigation bar.-->
+      <li><a href="#Release">Release</a></li><!--Link to release section in navigation bar.-->
+      <li><a href="#Genre">Genre</a></li><!--Link to genre section in navigation bar.-->
+      <li><a href="#Cast">Cast</a></li><!--Link to cast section in navigation bar.-->
+      <li><a href="#Duration">Duration</a></li><!--Link to duration section in navigation bar.-->
+      <li><a href="#Production">Production</a></li></li><!--Link to production section in navigation bar.-->
+      <li><a href="#Review">Review</a></li><!--Link to review section in navigation bar.-->
+      <li><a class="trailer-btn" href="https://youtu.be/6i97ZmNRsUA?si=H49sEecF4Z3l4-Kk" target="_blank">Trailer</a></li>
+    </ul>
+  </nav><!--A navigation bar, to quickly navigate to sections further down the page (anchor Ids).-->
+  <main class="information">
+    <section id="Overview">
+      <h1>Fool Me Once</h1>
+      <p>
+        The Netflix original series <strong>"Fool Me Once"</strong> is an interpretation of Harlan Coben's book. The story follows a deadly conspiracy that dates back many years and is revealed to Maya, an ex-soldier, when she discovers her deceased spouse on a hidden nanny cam.
+      </p>
+    </section>
+    <section id="Release">
+      <h2>Release</h2>
+      <p>January 1, 2024</p>
+    </section>
+    <section id="Genre">
+      <h2>Genre</h2>
+      <p>Thriller, Drama, Mystery, Crime</p>
+    </section>
+    <section id="Cast">
+      <h2>Cast</h2>
+      <ul>
+        <li>Marcus Garvey</li>
+        <li>Richard Armitage</li>
+        <li>Adeel Akhtar</li>
+        <li>Joanna Lumley</li>
+        <li>Dino Fetscher</li>
+        <li>Danya Griver</li>
+        <li>Laurie Kynaston</li>
+        <li>Emmett Scanlan</li>
+        <li>Michelle Keegan</li>
+      </ul>
+    </section>
+    <section id="Duration">
+      <h2>Duration</h2>
+      <p>8 Episodes, approximately 45–50 minutes each</p>
+    </section>
+    <section id="Production">
+      <h2>Production</h2>
+      <p>Quay Street Productions, Final Twist Productions</p>
+    </section>
+    <section id="Review">
+      <h2>Review</h2>
+      <ul>
+        <li>6.8/10 IMDb</li>
+        <li>71% Rotten Tomatoes</li>
+        <li>1/5 The Independent</li>
+      </ul>
+    </section>
+  </main><!--An overview of the plot, Key information, Genre, Cast & Characters, Production details.-->
+</body>
+</html>
