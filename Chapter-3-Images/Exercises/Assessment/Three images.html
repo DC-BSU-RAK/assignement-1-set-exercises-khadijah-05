@@ -4,56 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Urban Streets</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #000;/* to make the background black */
-      color: #fff;/* for White text */
-      padding: 20px;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    figure {
-      max-width: 400px;
-      text-align: center;
-    }
-
-    img {
-      width: 100%;/* Width and height are kept original */
-      height: auto;
-      border-radius: 8px;
-      filter: grayscale(100%) contrast(110%);
-      transition: 0.3s ease-in-out;
-    }
-/* filters applied to images */
-    img:hover {
-      filter: grayscale(0%) contrast(120%) brightness(105%);
-      transform: scale(1.02);
-    }
-   /* to make Description displayed in a styled box */
-    figcaption {
-      font-size: 0.9rem;
-      margin-top: 10px;
-      background-color: #1a1a1a;
-      color: #ccc;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #444;
-      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -61,16 +12,14 @@
     <p>A moody black-and-white gallery featuring atmospheric visuals.</p>
   </header>
   <div class="gallery">
-    <!-- First Image -->
     <figure>
-      <img src="https://images.unsplash.com/photo-1741462166411-b94730c55171?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D "
+      <img src="https://images.unsplash.com/photo-1741462166411-b94730c55171?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D"
            alt="A busy city street at nightfall, illuminated by neon lights and dotted with people crossing the street." 
            title="Evening Rush: The City's Pulse in Motion" />
       <figcaption>Photo by Mikhail<br/>
         <a href="https://unsplash.com/@mikhailbenitez" target="_blank">Unsplash</a>
       </figcaption>
-    </figure>
-    <!-- Second Image -->
+    </figure>    <!-- First Image -->
     <figure>
       <img src="https://images.unsplash.com/photo-1742302954292-1f903368084e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzh8fHxlbnwwfHx8fHw%3D" 
            alt="A quiet alleyway bathed in soft light, showcasing the textures of aged brick walls and scattered urban elements." 
@@ -78,8 +27,7 @@
       <figcaption>Photo by mos design<br/>
         <a href="https://unsplash.com/@mosdesign" target="_blank">Unsplash</a>
       </figcaption>
-    </figure>
-    <!-- Third Image -->
+    </figure>    <!-- Second Image -->
     <figure>
       <img src="https://images.unsplash.com/photo-1743485753941-5d515a62628d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" 
            alt="A person taking a photograph in downtown Tunis, Tunisia, capturing the vibrant architecture of the city.​" 
@@ -87,7 +35,7 @@
       <figcaption>Photo by Kevin Charit<br/>
         <a href="https://unsplash.com/@kevin_charit" target="_blank">Unsplash</a>
       </figcaption>
-    </figure>
+    </figure>    <!-- Third Image -->
   </div>
 </body>
 </html>
