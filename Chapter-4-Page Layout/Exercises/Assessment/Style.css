@@ -1,50 +1,141 @@
-/* General body styling */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #000; /* black background */
-    color: #fff; /* white text */
-    padding: 20px;
-    line-height: 1.6;
-  }
-  /* Header styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  /* To avoid default browser styling */
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+  } 
+  /* body font, weight, text color, and background color */
+  
   header {
+    background-color: #17072b;
+    color: #fff;
     text-align: center;
-    margin-bottom: 30px;
-  }
-  /* Gallery layout */
-  .gallery {
+    padding: 30px 0 10px;
+  } 
+  /* Styling the header */
+  
+  header h1 {
+    font-family: Tahoma, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  } 
+  /* Customizing the title font, size, weight, and adds an underline with some margin at the bottom */
+  
+  nav {
+    background-color: #17072b;
+    padding: 10px 0 25px;
+  } 
+  /* Styling the navigation bar with a dark background and padding */
+  
+  nav ul {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-  }
-  /* Styling for each figure (image container) */
-  figure {
-    max-width: 400px;
-    text-align: center;
-  }
-  /* Image styling */
-  img {
+    gap: 50px;
+  } 
+  /* Making the navigation items display in a horizontal row with space between each item */
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  } 
+  /* Styling navigation links with white color, no underline, and a specific font size */
+  
+  main {
+    display: flex;
+    padding: 40px 50px;
+    gap: 30px;
+  } 
+  /* Creating a flex container for the main section with padding and space between the content */
+  
+  .left {
+    flex: 2;
+  } 
+  /* Ensuring the left section (main content) takes up twice as much space as the right section */
+  
+  .left h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  } 
+  /* Styling the left section heading with a custom font, size, weight, and underline */
+  
+  .left p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 95%;
+  } 
+  /* Styling the paragraph text in the left section with line height and max width for readability */
+  
+  .left img {
     width: 100%;
+    max-width: 600px;
     height: auto;
-    border-radius: 8px;
-    filter: grayscale(100%) contrast(110%);
-    transition: 0.3s ease-in-out;
-  }
-  /* Image hover effect */
-  img:hover {
-    filter: grayscale(0%) contrast(120%) brightness(105%);
-    transform: scale(1.02);
-  }
-  /* Figcaption styling */
-  figcaption {
-    font-size: 0.9rem;
-    margin-top: 10px;
-    background-color: #1a1a1a;
-    color: #ccc;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #444;
-    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
-  }
+    border: 1px solid #ccc;
+  } 
+  /* Styling images in the left section to be responsive with a max width and border */
+  
+  .right {
+    flex: 1;
+    background-color: #172d67;
+    padding: 20px;
+    color: #fff;
+  } 
+  /* Styling the right section with a darker background, padding, and white text */
+  
+  .right h3 {
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  } 
+  /* Styling the subheading in the right section similarly to the left section heading */
+  
+  .right ul {
+    list-style: none;
+    margin-bottom: 20px;
+  } 
+  /* Removing list bullets and adds space at the bottom of the right section's unordered list */
+  
+  .right ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  } 
+  /* Styling the individual list items in the right section with some space below each item */
+  
+  .right .images {
+    display: flex;
+    gap: 10px;
+  } 
+  /* Arranging images in the right section in a row with space between them */
+  
+  .right .images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  } 
+  /* Ensuring images in the right section have equal size and fit properly within the container */
+  
+  footer {
+    background-color: #8c15e9;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+  } 
+  /* Styling the footer with a purple background, centered white text, and small font size */
   
