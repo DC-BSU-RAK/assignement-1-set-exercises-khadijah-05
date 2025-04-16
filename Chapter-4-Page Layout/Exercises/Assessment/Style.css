@@ -1,0 +1,50 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    padding: 20px;
+    line-height: 1.6;
+  }
+  /* Header styling */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /* Gallery layout */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  /* Styling for each figure (image container) */
+  figure {
+    max-width: 400px;
+    text-align: center;
+  }
+  /* Image styling */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(100%) contrast(110%);
+    transition: 0.3s ease-in-out;
+  }
+  /* Image hover effect */
+  img:hover {
+    filter: grayscale(0%) contrast(120%) brightness(105%);
+    transform: scale(1.02);
+  }
+  /* Figcaption styling */
+  figcaption {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  }
+  
