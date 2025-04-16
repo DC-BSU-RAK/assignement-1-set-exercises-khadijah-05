@@ -4,30 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Petrol Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="index.js"></script>
-
+  <link rel="stylesheet" href="Petrol Calculator.css" />
+  <script src="Petrol Calculator.java"></script>
 </head>
 <body>
   <div class="container">
     <h1>Petrol Cost Calculator</h1>
-
-    <!-- Input for cost per liter with default value -->
     <label for="costPerLiter">Cost per liter:</label>
-    <input type="number" id="costPerLiter" value="1.72" step="0.01" />
-
-    <!-- Input for number of liters with default value -->
+    <input type="number" id="costPerLiter" value="1.72" step="0.01" /><!-- Enter the default figure for the cost per liter -->
     <label for="litersPurchased">Liters purchased:</label>
-    <input type="number" id="litersPurchased" value="0" step="0.1" />
-
-    <!-- Button to calculate total cost -->
-    <button onclick="calculateTotal()">Calculate Total</button>
-
-    <!-- Paragraph to display result -->
-    <p id="totalCost">Total cost: 0.00</p>
+    <input type="number" id="litersPurchased" value="0" step="0.1" /><!-- Enter the default value for the amount of liters -->
+    <button onclick="calculateTotal()">Calculate Total</button><!-- Button for total cost calculation -->
+    <p id="totalCost">Total cost: 0.00</p><!-- Paragraph to show the outcome -->
   </div>
-
-  <!-- JavaScript to handle calculation -->
   <script>
     function calculateTotal() {
       const costPerLiter = parseFloat(document.getElementById('costPerLiter').value);
@@ -35,6 +24,6 @@
       const total = costPerLiter * liters;
       document.getElementById('totalCost').textContent = 'Total cost:' + total.toFixed(2);
     }
-  </script>
+  </script><!-- JavaScript for computation handling -->
 </body>
 </html>
